@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:p="http://www.springframework.org/schema/p" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+     
+     <bean id="catbean" class="Assignment15.Category">
+        <property name="catname" value="Polo"></property>
+       
+    </bean>  
+      <bean id="itembean" class="Assignment15.Item">
+        
+        <property name="itemid" value="1"></property>
+        <property name="itemname" value="Polo"></property>
+        <property name="itemprice" value="100"></property>
+        <property name="cat" ref="catbean"></property>
+    </bean> 
+   <bean id="custbean" class="Assignment15.Customer">
+         <property name="custname" value="Polo"></property>
+          <property name="item" ref="itembean"></property>
+    </bean> 
+
+</beans>
+
