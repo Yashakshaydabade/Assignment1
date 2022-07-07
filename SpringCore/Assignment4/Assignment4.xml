@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:p="http://www.springframework.org/schema/p" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+<bean id="dept" class="Assignment4.Department">
+<property name="did" value="1"></property>
+<property name="dname" value="developer"></property>
+</bean>
+
+<bean id="que4" class="Assignment4.Employee">
+<property name="eid" value="1"></property>
+<property name="ename" value="Akshay"></property>
+<property name="salary" value="45000"></property>
+</bean>
+
+<bean id="dept1" class="Assignment4.Department">
+<property name="did" value="2"></property>
+<property name="dname" value="developer"></property>
+</bean>
+
+<bean id="que4a" class="Assignment4.Employee">
+<property name="eid" value="2"></property>
+<property name="ename" value="Akash"></property>
+<property name="salary" value="55000"></property>
+</bean>
+
+</beans>
